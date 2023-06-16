@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap");
+
+:root {
+  --primary: #00aaf8;
+  --secondary: #0160d6;
+  --light: #fff;
+  --mobile: #f2be22;
+  --msecond: #f29727;
+}
+
+/* General */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section-title h1 {
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.section-title h6 {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .section-title h6 {
+    font-weight: 600;
+    color: var(--mobile);
+  }
+}
+
+/* General */
+
+/* Button */
+
+#button {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+#button:hover {
+  background-color: var(--secondary);
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  #button {
+    background-color: var(--mobile);
+    color: var(--light);
+  }
+
+  #button:hover {
+    background-color: var(--msecond);
+    transition: 0.5s;
+  }
+}
+/* Button */
+
+/* Nav */
+.navbar ul {
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00aaf8;
+}
+
+/* Nav End */
+
+/* Hero Section */
+.hero-cover {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/cover.png);
+  background-size: cover;
+  height: 100vh;
+  isolation: isolate;
+}
+
+.hero-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgb(14, 13, 13);
+  opacity: 0.3;
+}
+
+.hero h2 {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Hero Section End */
+
+/* About Section */
+.about {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.about p {
+  color: #808b8d;
+}
+
+@media (max-width: 768px) {
+  .about h6 {
+    margin-top: 50px;
+  }
+}
+
+/* About Section End */
+
+/* Services Section */
+.services {
+  margin-bottom: 80px;
+}
+
+.services p {
+  color: #808b8d;
+}
+
+.services h4 {
+  font-weight: 600;
+}
+
+.services-item .services-content {
+  border-radius: 10px;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+}
+
+.services-content .bi {
+  font-size: 60px;
+  color: var(--primary);
+}
+
+.services-content:hover {
+  background: var(--primary);
+  transition: 0.5s;
+  color: #fff !important;
+}
+.services-content:hover .bi {
+  transition: 0.5s;
+  color: #fff !important;
+}
+
+.services-content:hover p {
+  transition: 0.5s;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .services-content .bi {
+    font-size: 60px;
+    color: var(--mobile);
+  }
+
+  .services-content:hover {
+    background: var(--mobile);
+    transition: 0.5s;
+    color: #fff !important;
+  }
+  .services-content:hover .bi {
+    transition: 0.5s;
+    color: #fff !important;
+  }
+
+  .services-content:hover p {
+    transition: 0.5s;
+    color: #fff !important;
+  }
+}
+
+/* Services Section End */
+
+/* Package Section */
+
+.destination-slide {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  background: #ffffff;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
+
+.destination-slide .col {
+  height: 26em;
+}
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.text-shadow-1 {
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.destination-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .destination-slide li a {
+    width: 100%;
+  }
+}
+/* Package Section End */
+
+/* Gallery Section */
+.gallery img {
+  transition: 0.5s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+/* Gallery Section End */
+
+/* Team Section */
+.team-item .btn {
+  background-color: var(--light);
+  color: var(--primary);
+  border-radius: 20px;
+  border-bottom: 1px solid var(--primary);
+}
+
+.team-item .btn:hover {
+  background-color: var(--primary);
+  color: var(--light);
+  transition: 0.5s;
+}
+
+.team-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+}
+
+.team-item img {
+  transition: 0.5s;
+}
+
+.team-item img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .team-item .btn {
+    background-color: var(--light);
+    color: var(--mobile);
+    border-radius: 20px;
+    border-bottom: 1px solid var(--mobile);
+  }
+
+  .team-item .btn:hover {
+    background-color: var(--mobile);
+    color: var(--light);
+    transition: 0.5s;
+  }
+}
+
+/* Team Section End */
+
+/* Testimonial Section */
+.testimonial-slide {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  background: rgb(255, 254, 254);
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-slide .col {
+  height: 18em;
+}
+.testimonial-wraper .swiper-slide-prev::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 1;
+}
+
+.testimonial-wraper .swiper-slide-next::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 1;
+}
+
+.testimonial-wraper {
+  margin-bottom: 100px;
+}
+
+.testimonial-wraper .swiper-slide-active {
+  background-color: var(--primary);
+  color: var(--light) !important;
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .testimonial-wraper .swiper-slide-active {
+    background-color: var(--mobile);
+    color: var(--light) !important;
+    transition: 0.5s;
+  }
+}
+/* Testimonial Section End */
+
+/* Footer */
+.footer {
+  background-color: var(--primary);
+}
+
+.footer,
+ul {
+  color: #fff;
+}
+
+.footer .footer-nav {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    background-color: var(--mobile);
+  }
+}
+/* Footer End */
